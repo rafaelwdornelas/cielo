@@ -4,6 +4,7 @@ module.exports = (params) => {
   return {
     creditCard: {
       simpleTransaction: cielo.postSalesCielo,
+      zeroauth: cielo.postZeroAuthCielo,
       completeTransaction: cielo.postSalesCielo,
       authenticationTransaction: cielo.postSalesCielo,
       fraudAnalysisTransaction: cielo.postSalesCielo,
